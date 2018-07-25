@@ -78,7 +78,7 @@ header{
 
 header nav {
   display: flex;
-  width: 691px;
+  width: 690px;
     
   vertical-align: top;
   margin-top: 35px;
@@ -113,14 +113,11 @@ header .logo {
 /* cta */
 .cta {
     display:flex;
-    width=100%;
-    border:1px solid red;
-    flex-direction:row;
-    justify-content: space-between;`
+    flex-direction: row;
 }
 
 .cta .cta-text {
-/*  display: inline-block;*/
+/*    display: flex;*/
   vertical-align: top;
   font-size: 77px;
   margin-top: 120px;
@@ -144,21 +141,22 @@ header .logo {
 }
 
 .cta img {
-/*  display: inline-block;*/
+  display: flex;
   margin-top: 69px;
 }
 
 .main-content {
   border-top: 1px solid black;
+    
   margin-top: 76px;
   padding-top: 39px;
 }
 
 .main-content .top-content {
+/*  padding: 0 10px;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-/*  padding: 0 10px;*/
 }
 
 .main-content .top-content .text-content {
@@ -177,20 +175,19 @@ header .logo {
 }
 
 .main-content .bottom-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
   margin-top: 37px;
-/*  padding: 0 10px;
-*/
+  padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
 }
 
 .main-content .bottom-content .text-content {
   width: 275px;
   display: flex;
-  flex-direction: column;
   margin-right: 12px;
+  flex-direction: column;
+/*  justify-content: space-between;*/
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -212,6 +209,23 @@ footer {
   text-align: center;
   font-size: 14px;
 }
-nav .nav-anchor {
+.services .main-content .services-intro{
+    display:flex;
+/*    border:1px solid red;*/
+    flex-direction:column;
+}
+.services .main-content .services-intro h1 {
+    font-size: 20px;
+}
+.services .service-type-container {
+    display:flex;
+    align-content:center;
+/*    border: 1px solid red;*/
+    flex-flow: row, wrap;
+}
+.services .service-type-container .service-types {
+/*    display:flex;*/
+    width: 600px;
+/*    border: 1px solid blue;*/
     
 }
