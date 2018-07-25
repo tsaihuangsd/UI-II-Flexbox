@@ -222,10 +222,24 @@ footer {
     align-content:center;
 /*    border: 1px solid red;*/
     flex-flow: row, wrap;
+    height: 1000px;
+    
 }
 .services .service-type-container .service-types {
 /*    display:flex;*/
-    width: 600px;
+    width: 500px;
 /*    border: 1px solid blue;*/
     
+}
+.services .bottom {
+/*    border:1px solid red;   */
+    display:flex;
+    flex-direction: row;
+}
+.services .bottom .bottom-text {
+    width:50%;
+}
+.services .bottom .services-info-img {
+    width:50%;
+    height:100%;
 }
