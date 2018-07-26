@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5 {
   width: 880px;
   /* TB LR */
   margin: 0 auto;
+/*    border:1px solid blue;*/
 }
 
 /* header */
@@ -130,6 +131,8 @@ header .logo {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
+  width:auto;
+/*  width: 50px;*/
   font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
@@ -146,8 +149,7 @@ header .logo {
 }
 
 .main-content {
-  border-top: 1px solid black;
-    
+/*  border-top: 1px solid black;*/
   margin-top: 76px;
   padding-top: 39px;
 }
@@ -209,6 +211,16 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+.services-header-img {
+    margin: 20px 0 0 0;
+    /*    border: 1px solid red;*/
+}
+.services .main-content {
+    margin: 20px 0;
+    padding: 0 0 0 0;
+/*    border: 1px solid blue;*/
+}
+
 .services .main-content .services-intro{
     display:flex;
 /*    border:1px solid red;*/
@@ -217,29 +229,67 @@ footer {
 .services .main-content .services-intro h1 {
     font-size: 20px;
 }
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 880px;
+    margin: 0 auto;
+/*    border:1px solid blue;*/
+
+}
 .services .service-type-container {
     display:flex;
-    align-content:center;
+    width: 100%;
+    align-content:space-around;
+    justify-content: space-between;
 /*    border: 1px solid red;*/
-    flex-flow: row, wrap;
-    height: 1000px;
-    
+    flex-flow: row wrap;
+    height: 700px;
 }
-.services .service-type-container .service-types {
-/*    display:flex;*/
-    width: 500px;
-/*    border: 1px solid blue;*/
-    
+.services .service-type-container .service-type-box {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    width: 48%;
+    height: 28%;
+    border: 1px solid black;
+    background-color: #F4F3F4;
+}
+.services .service-type-container .service-type-box .service-types {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+    margin:auto;
+}
+button {
+    width:100px;
 }
 .services .bottom {
 /*    border:1px solid red;   */
     display:flex;
+    justify-content: space-between;
     flex-direction: row;
+    justify-content: 
 }
 .services .bottom .bottom-text {
-    width:50%;
+    width:48%;
 }
 .services .bottom .services-info-img {
-    width:50%;
+    width:48%;
     height:100%;
 }
+.fact-list {
+    margin: 0 0 0 20px;
+}
+.services .footer {
+    margin:70px 0 0 0;
+    width:880px;
+    display: flex;
+    justify-content: center;
+}
+
+
